@@ -437,6 +437,7 @@ Mix the color with white to create a lighter tint.
 {{base green}}The quick {{tint(green, 50)}}brown fox{{/}} jumped over the lazy dog.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_tint.png)
+
 Tone function
 -----
 
