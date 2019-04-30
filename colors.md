@@ -367,7 +367,7 @@ accomplished with `hue(color, 180)`, but it's easier to tell what the intent is 
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_complement.png)
 
-### Palettes
+# Palettes
 
 Palettes allow you to design a custom color scheme in a `.zon` file, and then refer to those
 colors as variables in a text string. This makes it very easy to change colors throughout
