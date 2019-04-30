@@ -45,7 +45,8 @@ Toril supports the same named colors found in CSS3, but to really take advantage
 
 Toril supports several built-in commands that can make creating interesting color effects without a lot of manual work. These commands are used just like colors, but support multiple parameters separated by spaces. Example:  `{{alternate red green 4}}`
 
-### Base
+Base
+-----
 
 Sets the base color for this line of text. The base color is the color that will be used when the
 color is normalized.
@@ -60,7 +61,8 @@ color is normalized.
 ```
 ![](http://www.torilmud.com/images/colors/colors_cmd_base.png)
 
-### Background
+Background
+-----
 
 Sets the background color.
 
@@ -74,7 +76,8 @@ Sets the background color.
 ```
 ![](http://www.torilmud.com/images/colors/colors_cmd_bg.png)
 
-### Lighten
+Lighten
+-----
 
 Lighten the color by a percentage. If the color is omitted, it will use the last used color instead.
 
@@ -91,7 +94,8 @@ Lighten the color by a percentage. If the color is omitted, it will use the last
 ![](http://www.torilmud.com/images/colors/colors_cmd_lighten.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_lighten2.png)
 
-### Darken
+Darken
+-----
 
 Darken the color by a percentage. If the color is omitted, it will use the last used color instead.
 
@@ -108,7 +112,8 @@ Darken the color by a percentage. If the color is omitted, it will use the last 
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken2.png)
 
-### Alternating text
+Alternating text
+-----
 
 Alternates between two colors every *x* characters.
 
@@ -125,7 +130,8 @@ Alternates between two colors every *x* characters.
 ![](http://www.torilmud.com/images/colors/colors_cmd_alt.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_alt2.png)
 
-### Linear gradient
+Linear gradient
+-----
 
 Creates a linear gradient from color1 to color2 through the length of the enclosed text.
 
@@ -139,7 +145,8 @@ Creates a linear gradient from color1 to color2 through the length of the enclos
 ```
 ![](http://www.torilmud.com/images/colors/colors_cmd_linear_gradient.png)
 
-### Shade gradient
+Shade gradient
+-----
 
 Creates a gradient by gradually mixing it with black and then back again. By default, it will shade
 each character by 10%, and approach 95% of the way to all black. Both of these values can be adjusted
@@ -157,7 +164,8 @@ by changing `step` and `max`.
 ![](http://www.torilmud.com/images/colors/colors_cmd_shade_gradient.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_shade_gradient2.png)
 
-### Tint gradient
+Tint gradient
+-----
 
 Creates a gradient by gradually mixing it with white and then back again. By default, it will tint
 each character by 10%, and approach 95% of the way to all white. Both of these values can be adjusted
@@ -175,7 +183,8 @@ by changing `step` and `max`.
 ![](http://www.torilmud.com/images/colors/colors_cmd_tint_gradient.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_tint_gradient2.png)
 
-### Tone gradient
+Tone gradient
+-----
 
 Creates a gradient by gradually mixing it with grey and then back again. By default, it will add tone to
 each character by 10%, and approach 80% of the way to all grey. Both of these values can be adjusted
@@ -194,7 +203,8 @@ by changing `step` and `max`.
 ![](http://www.torilmud.com/images/colors/colors_cmd_tone_gradient.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_tone_gradient2.png)
 
-### Saturate gradient
+Saturate gradient
+-----
 
 Creates a gradient by gradually saturating it and then reversing the saturation. By default, it will saturate
 each character by 10%, and go all the way to 100% saturation. Both of these values can be adjusted by changing `step` and `max`.
@@ -212,7 +222,8 @@ each character by 10%, and go all the way to 100% saturation. Both of these valu
 ![](http://www.torilmud.com/images/colors/colors_cmd_saturate_gradient.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_saturate_gradient2.png)
 
-#### Desaturate gradient
+Desaturate gradient
+-----
 
 Creates a gradient by gradually desaturating it and then reversing the saturation. By default, it will desaturate
 each character by 10%, and go all the way to 100% desaturation. Both of these values can be adjusted by changing `step` and `max`.
@@ -231,13 +242,15 @@ This works best on lighter colors that have some range for desaturation.
 ![](http://www.torilmud.com/images/colors/colors_cmd_desaturate_gradient.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_desaturate_gradient2.png)
 
-## Functions
+Functions
+-----
 
 Color functions are used to change a color programmatically. They can be used anywhere you would use a color, and
 really show their usefulness when combined with palettes and variables. Functions change take multiple parameters, separated
 by commas.
 
-### Lighten function
+Lighten function
+-----
 
 Lighten the given color by a percentage.
 
@@ -252,7 +265,8 @@ Lighten the given color by a percentage.
 
 ![](http://www.torilmud.com/images/colors/colors_fn_lighten.png)
 
-### Darken function
+Darken function
+-----
 
 Darken the given color by a percentage.
 
@@ -266,7 +280,8 @@ Darken the given color by a percentage.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_darken.png)
 
-### Saturate function
+Saturate function
+-----
 
 Saturate the given color by a percentage.
 
@@ -281,7 +296,8 @@ Saturate the given color by a percentage.
 
 ![](http://www.torilmud.com/images/colors/colors_fn_saturate.png)
 
-### Desaturate function
+Desaturate function
+-----
 
 Desaturate the given color by a percentage.
 
@@ -295,7 +311,8 @@ Desaturate the given color by a percentage.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_desaturate.png)
 
-### Hue function
+Hue function
+-----
 
 Adjust the hue of the given color. This basically spins the color wheel in a
 HSV color space. Take a look at https://en.wikipedia.org/wiki/HSL_and_HSV for
@@ -311,7 +328,8 @@ The quick {{hue(yellow, 90)}}brown fox{{/}} jumped over the lazy dog.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_hue.png)
 
-### Shade function
+Shade function
+-----
 
 Mix the color with black to create a darker shade.
 
@@ -325,7 +343,8 @@ Mix the color with black to create a darker shade.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_shade.png)
 
-### Tint function
+Tint function
+-----
 
 Mix the color with white to create a lighter tint.
 
@@ -338,7 +357,8 @@ Mix the color with white to create a lighter tint.
 {{base green}}The quick {{tint(green, 50)}}brown fox{{/}} jumped over the lazy dog.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_tint.png)
-### Tone function
+Tone function
+-----
 
 Mix the color with grey to create a tone.
 
@@ -352,7 +372,8 @@ Mix the color with grey to create a tone.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_tone.png)
 
-### Complement function
+Complement function
+-----
 
 Find a complementing color by spinning the color wheel 180 degrees. This could also be
 accomplished with `hue(color, 180)`, but it's easier to tell what the intent is with this.
