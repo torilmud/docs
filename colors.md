@@ -112,6 +112,84 @@ Darken the color by a percentage. If the color is omitted, it will use the last 
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken2.png)
 
+Tint
+-----
+
+Tint the color by a percentage. If the color is omitted, it will use the last used color instead.
+
+**Syntax**:
+
+`{{tint [color1] [pct]}}`
+
+**Example**
+```
+{{base violet}}The quick {{tint 50}}brown fox{{/}} jumped over the lazy dog.
+```
+
+![](http://www.torilmud.com/images/colors/colors_cmd_tint.png)
+
+Shade
+-----
+
+Shade the color by a percentage. If the color is omitted, it will use the last used color instead.
+
+**Syntax**:
+
+`{{shade [color1] [pct]}}`
+
+**Example**
+```
+{{base springgreen}}The quick {{shade 75}}brown fox{{/}} jumped over the lazy dog.
+```
+
+![](http://www.torilmud.com/images/colors/colors_cmd_shade.png)
+
+Tone
+-----
+
+Adjust the tone of a color by a percentage. If the color is omitted, it will use the last used color instead.
+
+**Syntax**:
+
+`{{tone [color1] [pct]}}`
+
+**Example**
+```
+{{base darkgoldenrod}}The quick {{tone 75}}brown fox{{/}} jumped over the lazy dog.
+```
+![](http://www.torilmud.com/images/colors/colors_cmd_tone.png)
+
+Saturate
+-----
+
+Saturate a color by a percentage. If the color is omitted, it will use the last used color instead.
+
+**Syntax**:
+
+`{{saturate [color1] [pct]}}`
+
+**Example**
+```
+{{base violet}}The quick {{saturate 75}}brown fox{{/}} jumped over the lazy dog.
+```
+![](http://www.torilmud.com/images/colors/colors_cmd_saturate.png)
+
+Desaturate
+-----
+
+Desaturate a color by a percentage. If the color is omitted, it will use the last used color instead.
+
+**Syntax**:
+
+`{{desaturate [color1] [pct]}}`
+
+**Example**
+```
+{{base violet}}The quick {{desaturate 25}}brown fox{{/}} jumped over the lazy dog.
+```
+![](http://www.torilmud.com/images/colors/colors_cmd_desaturate.png)
+
+
 Alternating text
 -----
 
@@ -235,8 +313,8 @@ This works best on lighter colors that have some range for desaturation.
 
 **Example**
 ```
-{{gradient-desaturate lime}}The quick brown fox jumped over the lazy dog.
-{{gradient-desaturate lime 5 50}}The quick brown fox jumped over the lazy dog.
+{{gradient-desaturate blue}}The quick brown fox jumped over the lazy dog.
+{{gradient-desaturate blue 5 50}}The quick brown fox jumped over the lazy dog.
 ```
 
 ![](http://www.torilmud.com/images/colors/colors_cmd_desaturate_gradient.png)
@@ -324,7 +402,7 @@ more detail.
 
 **Example**
 ```
-The quick {{hue(yellow, 90)}}brown fox{{/}} jumped over the lazy dog.
+{{base yellow}}The quick {{hue(yellow, 90)}}brown fox{{/}} jumped over the lazy dog.
 ```
 ![](http://www.torilmud.com/images/colors/colors_fn_hue.png)
 
