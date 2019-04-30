@@ -52,7 +52,7 @@ color is normalized.
 
 **Syntax**:
 
-`{{base [color]}}``
+`{{base [color]}}`
 
 **Example**
 ```
@@ -66,7 +66,7 @@ Sets the background color.
 
 **Syntax**:
 
-`{{bg [color]}}``
+`{{bg [color]}}`
 
 **Example**
 ```
@@ -80,7 +80,7 @@ Lighten the color by a percentage. If the color is omitted, it will use the last
 
 **Syntax**:
 
-`{{lighten [color1] [x]}}``
+`{{lighten [color1] [x]}}`
 
 **Example**
 ```
@@ -97,12 +97,13 @@ Darken the color by a percentage. If the color is omitted, it will use the last 
 
 **Syntax**:
 
-`{{darken [color1] [x]}}``
+`{{darken [color1] [x]}}`
 
 **Example**
 ```
 {{darken pink 50}}The quick brown fox jumped over the lazy dog.
-{{pink}}The quick {{darken pink 50}}brown fox{{pink}} jumped over the lazy dog.```
+{{pink}}The quick {{darken pink 50}}brown fox{{pink}} jumped over the lazy dog.
+```
 
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_darken2.png)
@@ -113,7 +114,7 @@ Alternates between two colors every *x* characters.
 
 **Syntax**:
 
-`{{alt [color1] [color2] [x]}}``
+`{{alt [color1] [color2] [x]}}`
 
 **Example**
 ```
