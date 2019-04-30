@@ -203,10 +203,12 @@ Alternates between two colors every *x* characters.
 ```
 {{alt seagreen forestgreen 3}}The quick brown fox jumped over the lazy dog.{{/alt}}
 {{alt red goldenrod}}The quick brown fox jumped over the lazy dog.{{/alt}}
+{{alt slateblue desaturate(slateblue, 25) 3}}The quick brown fox jumped over the lazy dog
 ```
 
 ![](http://www.torilmud.com/images/colors/colors_cmd_alt.png)
 ![](http://www.torilmud.com/images/colors/colors_cmd_alt2.png)
+![](http://www.torilmud.com/images/colors/colors_cmd_alt3.png)
 
 Linear gradient
 -----
